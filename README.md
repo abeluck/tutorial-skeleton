@@ -7,7 +7,6 @@ Demo: http://abeluck.github.io/tutorial-skeleton
 This is a Guardian Project effort. For more info about our open source privacy
 tools, please visit https://guardianproject.info/
 
-
 ### Usage
 
 This tutorial depends on the [deck.js
@@ -33,5 +32,3 @@ Unported License. To view a copy of this license, visit
 http://creativecommons.org/licenses/by-sa/3.0/.
 
 ![Creative Commons Attribution-ShareAlike](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)
-
-
