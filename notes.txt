@@ -1,0 +1,4 @@
+
+https://sixohthree.com/1380/makefile-for-css-and-js-minifycompress
+http://linuxpoison.blogspot.de/2010/01/pngcrush-optimize-png-file-image-to.html
+http://www.cyberciti.biz/faq/linux-unix-optimize-lossless-png-images-with-optipng-command/

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<!--
+
+This is an effort from the Guardian Project. For more info about our open
+source security tools, please visit https://guardianproject.info/
+
+Thanks to Sam Vermette for the inspiration - http://samvermette.com
+
+-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Howto: BE AWESOME</title>
+
+    <meta name="description" content="Howto: BE AWESOME">
+    <meta name="author" content="The Guardian Project">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <!-- Core and extension CSS files -->
+    <link rel="stylesheet" href="../deck.js/core/deck.core.css">
+    <link rel="stylesheet" href="../deck.js/extensions/goto/deck.goto.css">
+    <link rel="stylesheet" href="../deck.js/extensions/menu/deck.menu.css">
+    <link rel="stylesheet" href="../deck.js/extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" href="../deck.js/extensions/status/deck.status.css">
+    <link rel="stylesheet" href="../deck.js/extensions/hash/deck.hash.css">
+
+    <!-- Theme CSS files (menu swaps these out) -->
+    <link rel="stylesheet" id="style-theme-link" href="../deck.js/tutorial/guardian.css">
+    <link rel="stylesheet" href="../deck.js/tutorial/fade.css">
+    <link rel="stylesheet" href="../deck.js/tutorial/tutorial.css">
+    <link rel="stylesheet" href="../deck.js/tutorial/common.css">
+
+    <!-- Custom CSS just for this page -->
+    <link rel="stylesheet" href="custom.css">
+
+    <script src="../deck.js/modernizr.custom.js"></script>
+</head>
+
+<body class="tutorial">
+
+<header>
+    <nav>
+        <!-- this is constantly displayed throughout the whole tutorial -->
+        <h1>So you want to be awesome?</h1>
+    </nav>
+</header>
+
+<article class="deck-container">
+
+    <div id="outside">
+        <div id="instructions">
+
+            <!-- instructions are made up of <section> blocks with the class="slide" attribute"
+                 the id field is very important, it controls which image is displayed, and also
+                 provides the anchor for navigation between steps
+            -->
+            <section class="slide" id="00-begin">
+                <h2>Yes!</h2>
+                <p><a href="#01-example">How do I become awesome?</a></p>
+            </section>
+
+            <section class="slide" id="01-example">
+                <p>1. You should probably start by drinking lots of coffee</p>
+                <p><a href="#02-share">Love it!</a></p>
+                <p><a href="#01a-tea">I prefer tea</a></p>
+            </section>
+
+            <!-- check out the automatic progression with customizable durations!
+                It works by specifying sub-slides with the data-duration attribute -->
+            <section class="slide" id="01a-tea" data-duration="2000">
+                <p>I'm afraid tea won't cut it. Unless it's that yummy Indian kind that looks like coffee</p>
+                <p class="slide" id="slide-cinnamon" data-duration="1000">Mmmm cinnamon...</p>
+                <p class="slide"><a href="#02-share">Ok, I'll drink that</a></p>
+            </section>
+
+
+            <section class="slide" id="02-share">
+
+                <p>Great! Now while you're sipping down that big hot steamy mug
+                of delicious nectar, why don't you tell your friends about the
+                Guardian Project?</p>
+
+                <p><a a href="#slide-done">Sure thing!</a></p>
+
+            </section>
+
+            <section class="slide" id="slide-done">
+                <p>You're awesome!</p>
+                <p><a href="#00-begin">Play again.</a></p>
+                <p>For more information visit <a href="https://guardianproject.info">The Guardian Project</a></p>
+            </section>
+
+            <!-- blank slide copy paste and edit to your liking
+            <section class="slide" id="">
+                <p></p>
+                <p><a href="#"></a></p>
+            </section>
+            -->
+
+        </div>
+
+        <div id="window">
+            <!-- the image is automatically populated by javascript -->
+            <img id="screenshot" src="" />
+        </div>
+
+    </div>
+
+    <!---
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <p class="deck-status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+    </p>
+    <form action="." method="get" class="goto-form">
+        <label for="goto-slide">Go to slide:</label>
+        <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+        <datalist id="goto-datalist"></datalist>
+        <input type="submit" value="Go">
+    </form>
+--->
+
+    <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+</article>
+
+<footer>
+    <p>Brought to you by <a href="http://guardianproject.info">The Guardian Project</a></p>
+</footer>
+
+<!-- TODO CDN jquery -->
+ <script src="../deck.js/jquery-1.9.1.js"></script>
+ <script src="../deck.js/jquery-ui.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="../deck.js/core/deck.core.js"></script>
+<script src="../deck.js/extensions/hash/deck.hash.js"></script>
+<script src="../deck.js/extensions/menu/deck.menu.js"></script>
+<script src="../deck.js/extensions/status/deck.status.js"></script>
+<script src="../deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src="../deck.js/extensions/step/deck.step.js"></script>
+<script src="../deck.js/extensions/events/deck.events.js"></script>
+<script src="../deck.js/extensions/automatic/deck.automatic.js"></script>
+
+<script src="../deck.js/tutorial/tutorial.js"></script>
+
+<script>
+
+// code specific to this tutorial
+
+$(function() {
+
+    $("#slide-starting").bind('deck.becameCurrent', function(ev, direction) {
+
+    });
+});
+</script>
+</body>
+</html>
