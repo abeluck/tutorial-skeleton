@@ -2,10 +2,16 @@
 
 A sample skeleton for interactive tutorials built with HTML, CSS and JS.
 
-Demo: demo link
+Demo: http://abeluck.github.io/tutorial-skeleton
 
 This is a Guardian Project effort. For more info about our open source privacy
 tools, please visit https://guardianproject.info/
+
+![Creative Commons Attribution-ShareAlike](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0
+Unported License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/3.0/.
+
 
 ### Usage
 
@@ -16,8 +22,8 @@ by The Guardian Project.
 ```bash
 
     git clone https://github.com/abeluck/deck.js.git
-    git clone https://github.com/abeluck/Orbot---Orweb-Tutorial.git
-    cd Orbot---Orweb-Tutorial/
+    git clone https://github.com/abeluck/tutorial-skeleton
+    cd tutorial-skeleton/
     firefox index.html
 ```
 
